@@ -162,7 +162,7 @@ bool SamplesBySite::buildFromFile(const char* file)
 {
     string line;
     ifstream infile(file);
-	if(infile == NULL)
+	if(!infile)
 	{
 		printf("can not open %s\n", file);
 		return false;
