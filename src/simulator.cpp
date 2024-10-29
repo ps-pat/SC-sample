@@ -716,7 +716,7 @@ void Simulator::beginSimulation(){
     try{
         //llf added read samples 
         SamplesBySite samples(pConfig->iSampleSize);// = new SamplesBySite(params.nSample);
-        if(!samples.buildFromFile(pConfig->fsample))
+        if(!samples.buildFromFile("example/sample_10_10.0"))
     	{
     		cerr<<"failed to build sample file "<<pConfig->fsample<<endl;
     		return ;        
